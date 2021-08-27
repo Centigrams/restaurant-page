@@ -9,7 +9,6 @@ const createText = (text, tag, idName, className) => {
 const renderHome = () => {
   const homeDiv = document.createElement('div');
   homeDiv.setAttribute('id', 'home-div');
-
   homeDiv.appendChild(
     createText(
       'Ginza Kyu', 
@@ -18,7 +17,6 @@ const renderHome = () => {
       null
     )
   );
-
   homeDiv.appendChild(
     createText(
       'World-class. Since 1935.',
@@ -27,14 +25,12 @@ const renderHome = () => {
       null
     )
   );
-
   return homeDiv;
 };
 
 const initiateHome = () => {
   const main = document.getElementById('main');
-  //? Is this enough to clear page?
-  main.textContent = "";
+  main.innerHTML = '';
   main.appendChild(renderHome());
 };
 
