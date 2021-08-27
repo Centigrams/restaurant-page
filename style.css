@@ -87,11 +87,7 @@ Main contains entire page content per tab
 excluding nav bar and footer.
 */
 #main {
-    /* 
-  5rem header + 2.5rem footer (+0.2rem due to red nav border) = 7.5rem
-  This was used due to the header pushing the content div thus creating
-  an unnecessary scrollbar. 
-  */
+  /* 5rem header + 2.5rem footer (+0.2rem due to red nav border) = 7.5rem */
   min-height: calc(100vh - 7.5rem);
   background: var(--empty-background-gray);
 }
@@ -99,18 +95,18 @@ excluding nav bar and footer.
 #home-div {
   width: 100%;
   min-height: calc(100vh - 7.5rem); 
-  background: var(--empty-background-gray);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: url('/src/photos/home-darker.jpg');
 }
 
 #restaurant-name {
   color: var(--offwhite);
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 #restaurant-line {
   color: var(--border-color-red);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
