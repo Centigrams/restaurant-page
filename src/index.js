@@ -63,12 +63,8 @@ const loadPage = () => {
 
 document.addEventListener('click',(e) => {
   const clickedTab = e.target.textContent;
-  // const activeTab = e.target.classlist.contains('active');
-
-  // Avoids repetitve page loading
-  // if (activeTab) return;
   if (clickedTab === 'HOME') {
-    //   initiateHome();
+      initiateHome();
   } else if (clickedTab === 'MENU') {
     //   initiateMenu();
   } else if (clickedTab === 'CONTACT US') {
