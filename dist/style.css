@@ -12,6 +12,7 @@ body {
   margin: 0;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,34 @@ body {
   height: 100vh;
   justify-content: space-between;
   background-size: cover;
+}
+
+#nav-bar {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 0.2rem solid var(--border-color-red);
+  background: none;
+  height: 4rem;
+}
+
+#tab-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.tabs {
+  margin: 0 2rem;
+}
+
+.active,
+.tabs:hover {
+  cursor: pointer;
+  color: var(--border-color-red);
 }
 
 #footer {
