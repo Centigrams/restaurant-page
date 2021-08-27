@@ -1,4 +1,5 @@
-//TODO:
+import initiateHome from "./home";
+
 const createNavBar = () => {
   const navBar = document.createElement('nav');
   navBar.setAttribute('id', 'nav-bar');
@@ -58,7 +59,7 @@ const loadPage = () => {
   content.appendChild(createNavBar());
   content.appendChild(createMain());
   content.appendChild(createFooter());
-  // initiateHome();
+  initiateHome();
 }
 
 document.addEventListener('click',(e) => {
@@ -72,3 +73,13 @@ document.addEventListener('click',(e) => {
   }
 });
 loadPage();
+
+function createText (text, tag, idName, className) {
+  const textElement = document.createElement(tag);
+  textElement.textContent = text;
+  textElement.setAttribute('id', idName);
+  textElement.classList.add(className);
+  return textElement;
+};
+
+export { createText };
