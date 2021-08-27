@@ -1,10 +1,30 @@
 //TODO:
 const createNavBar = () => {
   const navBar = document.createElement('nav');
+  navBar.setAttribute('id', 'nav-bar');
+
+  const tabContainer = document.createElement('ul');
+  tabContainer.setAttribute('id', 'tab-container');
+  navBar.appendChild(tabContainer);
+
+  const homeTab = document.createElement('li');
+  homeTab.textContent = 'HOME';
+  homeTab.classList.add('tabs');
+  tabContainer.appendChild(homeTab);
+
+  const menuTab = document.createElement('li');
+  menuTab.textContent = 'MENU';
+  menuTab.classList.add('tabs');
+  tabContainer.appendChild(menuTab);
+
+  const contactUsTab = document.createElement('li');
+  contactUsTab.textContent = 'CONTACT US';
+  contactUsTab.classList.add('tabs');
+  tabContainer.appendChild(contactUsTab);
+
   return navBar;
 };
 
-//? What's this for?
 const createMain = () => {
   const main = document.createElement('main');
   main.setAttribute('id', 'main');
@@ -22,7 +42,6 @@ const createFooter = () => {
   githubLinkUserName.textContent = 'Centigrams';
   githubLinkUserName.href = 'https://github.com/Centigrams';
   githubLinkUserName.setAttribute('id', 'github-link');
-
   footerMessage.append(githubLinkUserName);
 
   const githubLogo = document.createElement('img');
@@ -39,15 +58,15 @@ const loadPage = () => {
   content.appendChild(createNavBar());
   content.appendChild(createMain());
   content.appendChild(createFooter());
-  initiateHome();
+  // initiateHome();
 }
 
 document.addEventListener('click',(e) => {
   const clickedTab = e.target.textContent;
-  const activeTab = e.target.classlist.contains('active');
+  // const activeTab = e.target.classlist.contains('active');
 
   // Avoids repetitve page loading
-  if (activeTab) return;
+  // if (activeTab) return;
   if (clickedTab === 'HOME') {
     //   initiateHome();
   } else if (clickedTab === 'MENU') {
