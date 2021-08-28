@@ -60,15 +60,18 @@ const loadPage = () => {
   content.appendChild(createNavBar());
   content.appendChild(createMain());
   content.appendChild(createFooter());
-  initiateHome();
-}
+  // initiateHome();
+  //! Initiating tabs aside from home for debugging purposes only.
+  // initiateContactUs();
+  initiateMenu();
+};
 
 document.addEventListener('click',(e) => {
   const clickedTab = e.target.textContent;
   if (clickedTab === 'HOME') {
       initiateHome();
   } else if (clickedTab === 'MENU') {
-    //   initiateMenu();
+      initiateMenu();
   } else if (clickedTab === 'CONTACT US') {
       initiateContactUs();
   }
