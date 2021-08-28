@@ -1,10 +1,4 @@
-const createText = (text, tag, idName, className) => {
-  const textElement = document.createElement(tag);
-  textElement.textContent = text;
-  textElement.setAttribute('id', idName);
-  textElement.classList.add(className);
-  return textElement;
-};
+import createText from "./helpers";
 
 const renderHome = () => {
   const homeDiv = document.createElement('div');
@@ -14,7 +8,6 @@ const renderHome = () => {
       'Ginza Kyu', 
       'h1', 
       'restaurant-name', 
-      null
     )
   );
   homeDiv.appendChild(
@@ -22,7 +15,6 @@ const renderHome = () => {
       'World-class. Since 1935.',
       'p',
       'restaurant-line',
-      null
     )
   );
   return homeDiv;
