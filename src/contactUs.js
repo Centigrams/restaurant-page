@@ -1,14 +1,37 @@
-const createText = (text, tag, idName, className) => {
-    const textElement = document.createElement(tag);
-    textElement.textContent = text;
-    textElement.setAttribute('id', idName);
-    textElement.classList.add(className);
-    return textElement;
-};
+import createText from "./helpers";
 
 const renderContactUs = () => {
   const contactUsDiv = document.createElement('div');
   contactUsDiv.setAttribute('id', 'contact-us-div');
+  contactUsDiv.appendChild(
+    createText(
+      'restaurantemail@ginzakyu.com',
+      'p',
+      'restaurant-email',
+    )
+  );
+  contactUsDiv.appendChild(
+    createText(
+      '123-456-789',
+      'p',
+      'telephone-number',
+    )
+  );
+  contactUsDiv.appendChild(
+    createText(
+      'Tokyo, Chuo City, Ginza',
+      'p',
+      'restaurant-address',
+    )
+  );
+  const map = document.createElement('div');
+  map.setAttribute('id', 'map-div');
+
+  const ginzaMap = document.createElement('img');
+  ginzaMap.setAttribute('id', 'ginza-map');
+  ginzaMap.src = '/src/photos/ginza-map.jpg';
+  map.appendChild(ginzaMap);
+  contactUsDiv.appendChild(map);
   return contactUsDiv;
 };
 
