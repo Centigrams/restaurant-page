@@ -1,4 +1,5 @@
 import initiateHome from "./home";
+import initiateContactUs from "./contactUs";
 
 const createNavBar = () => {
   const navBar = document.createElement('nav');
@@ -69,17 +70,7 @@ document.addEventListener('click',(e) => {
   } else if (clickedTab === 'MENU') {
     //   initiateMenu();
   } else if (clickedTab === 'CONTACT US') {
-    //   initiateContactUs();
+      initiateContactUs();
   }
 });
 loadPage();
-
-function createText (text, tag, idName, className) {
-  const textElement = document.createElement(tag);
-  textElement.textContent = text;
-  textElement.setAttribute('id', idName);
-  textElement.classList.add(className);
-  return textElement;
-};
-
-export { createText };
