@@ -1,3 +1,5 @@
+import './style.css';
+
 const renderMenu = () => {
   const renderMenuDiv = document.createElement('div');
   renderMenuDiv.setAttribute('id', 'render-menu-div');
@@ -12,7 +14,7 @@ const renderMenu = () => {
               <span class="price">¥11,000</span>
           </li>
           <li class="item"><span class="name">KYUBEY</span>
-              <span class="price">¥16,000</span>
+              <span class="price">¥16,;000</span>
           </li>
       </ul>
   </div>

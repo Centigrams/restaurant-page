@@ -1,4 +1,6 @@
 import createText from "./helpers";
+import './style.css';
+import restaurantMap from '/src/photos/ginza-map.jpg';
 
 const renderContactUs = () => {
   const contactUsDiv = document.createElement('div');
@@ -27,9 +29,11 @@ const renderContactUs = () => {
   const map = document.createElement('div');
   map.setAttribute('id', 'map-div');
 
-  const ginzaMap = document.createElement('img');
+  //// const ginzaMap = document.createElement('img');
+  //// ginzaMap.src = '/src/photos/ginza-map.jpg';
+  const ginzaMap = new Image();
+  ginzaMap.src = restaurantMap;
   ginzaMap.setAttribute('id', 'ginza-map');
-  ginzaMap.src = '/dist/photos/ginza-map.jpg';
   map.appendChild(ginzaMap);
   contactUsDiv.appendChild(map);
   return contactUsDiv;
