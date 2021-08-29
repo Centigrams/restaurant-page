@@ -48,6 +48,7 @@ body {
 
 .tabs {
   margin: 0 2rem;
+  font-family: "Teko", sans-serif;
 }
 
 .active,
@@ -69,9 +70,10 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--offwhite);
+  font-family: "Teko", sans-serif;
 }
 
-#github-logo {
+#github-logo {  font-family: "Teko", sans-serif;
   width: 1.5rem;
   margin-left: 1rem;
 }
@@ -131,11 +133,12 @@ excluding nav bar and footer.
 #restaurant-email {
   color: var(--offwhite);
   font-size: 1.5rem;
+  font-family: "Teko", sans-serif;
 }
 
 #restau1rant-address,
 #telephone-number {
-  margin-top: 1rem;
+  padding: 1rem;
 }
 
 #ginza-map {
@@ -147,7 +150,8 @@ excluding nav bar and footer.
 #render-menu-div {
   min-height: var(--main-content-div-size); 
   background: url('/src/photos/menu-darker.jpg');
-  padding: 1rem calc(50% - 20rem);
+  /* Apply 0.001rem to avoid pushing footer downwards */
+  padding: 0.001rem calc(50% - 20rem);
 }
 
 .item {
@@ -162,14 +166,15 @@ span {
   margin-bottom: -0.25rem;
   padding: 0.25rem;
   color: var(--offwhite);
+  font-size: 1.2rem;
 }
 .list-title {
   font-family: "Teko", sans-serif;
   font-size: 1.875rem;
   color: var(--border-color-red);
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .list {
   margin-bottom: 2rem;
 }
-
