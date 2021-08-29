@@ -1,5 +1,6 @@
 import initiateHome from "./home";
 import initiateContactUs from "./contactUs";
+import initiateMenu from "./menu";
 
 const createNavBar = () => {
   const navBar = document.createElement('nav');
@@ -60,10 +61,7 @@ const loadPage = () => {
   content.appendChild(createNavBar());
   content.appendChild(createMain());
   content.appendChild(createFooter());
-  // initiateHome();
-  //! Initiating tabs aside from home for debugging purposes only.
-  // initiateContactUs();
-  initiateMenu();
+  initiateHome();
 };
 
 document.addEventListener('click',(e) => {
