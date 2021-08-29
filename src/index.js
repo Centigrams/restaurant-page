@@ -49,8 +49,8 @@ const createFooter = () => {
   githubLinkUserName.setAttribute('id', 'github-link');
   footerMessage.append(githubLinkUserName);
 
-  // const githubLogo = document.createElement('img');
-  // githubLogo.src = '/src/photos/githubLogo.png';
+  //// const githubLogo = document.createElement('img');
+  //// githubLogo.src = '/src/photos/githubLogo.png';
   const githubLogo = new Image();
   githubLogo.src = footerGithubLogo;
   githubLogo.setAttribute('id', 'github-logo');
