@@ -1,4 +1,5 @@
 import createText from "./helpers";
+import './style.css';
 
 const renderHome = () => {
   const homeDiv = document.createElement('div');

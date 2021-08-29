@@ -1,6 +1,8 @@
+import './style.css';
 import initiateHome from "./home";
 import initiateContactUs from "./contactUs";
 import initiateMenu from "./menu";
+import footerGithubLogo from '/src/photos/githubLogo.png'
 
 const createNavBar = () => {
   const navBar = document.createElement('nav');
@@ -47,10 +49,11 @@ const createFooter = () => {
   githubLinkUserName.setAttribute('id', 'github-link');
   footerMessage.append(githubLinkUserName);
 
-  const githubLogo = document.createElement('img');
-  githubLogo.src = '/dist/photos/githubLogo.png';
+  // const githubLogo = document.createElement('img');
+  // githubLogo.src = '/src/photos/githubLogo.png';
+  const githubLogo = new Image();
+  githubLogo.src = footerGithubLogo;
   githubLogo.setAttribute('id', 'github-logo');
-
   footer.appendChild(footerMessage);
   footerMessage.appendChild(githubLogo);
   return footer;
