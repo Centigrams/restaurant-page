@@ -102,7 +102,7 @@ excluding nav bar and footer.
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: url('/src/photos/home-darker.jpg');
+  background: url('/dist/photos/home-darker.jpg');
 }
 
 #restaurant-name {
@@ -121,7 +121,7 @@ excluding nav bar and footer.
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: url('/src/photos/contact-us.jpg');
+  background: url('/dist/photos/contact-us.jpg');
 };
 
 #map-div {
@@ -149,7 +149,7 @@ excluding nav bar and footer.
 
 #render-menu-div {
   min-height: var(--main-content-div-size); 
-  background: url('/src/photos/menu-darker.jpg');
+  background: url('/dist/photos/menu-darker.jpg');
   /* Apply 0.001rem to avoid pushing footer downwards */
   padding: 0.001rem calc(50% - 20rem);
 }
