@@ -133,7 +133,7 @@ excluding nav bar and footer.
   font-size: 1.5rem;
 }
 
-#restaurant-address,
+#restau1rant-address,
 #telephone-number {
   margin-top: 1rem;
 }
@@ -146,7 +146,7 @@ excluding nav bar and footer.
 
 #render-menu-div {
   min-height: var(--main-content-div-size); 
-  background: url('');
+  background: url('/src/photos/menu-darker.jpg');
   padding: 1rem calc(50% - 20rem);
 }
 
