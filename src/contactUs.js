@@ -29,7 +29,7 @@ const renderContactUs = () => {
 
   const ginzaMap = document.createElement('img');
   ginzaMap.setAttribute('id', 'ginza-map');
-  ginzaMap.src = '/src/photos/ginza-map.jpg';
+  ginzaMap.src = '/dist/photos/ginza-map.jpg';
   map.appendChild(ginzaMap);
   contactUsDiv.appendChild(map);
   return contactUsDiv;

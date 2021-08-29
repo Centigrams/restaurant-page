@@ -48,7 +48,7 @@ const createFooter = () => {
   footerMessage.append(githubLinkUserName);
 
   const githubLogo = document.createElement('img');
-  githubLogo.src = '/src/photos/githubLogo.png';
+  githubLogo.src = '/dist/photos/githubLogo.png';
   githubLogo.setAttribute('id', 'github-logo');
 
   footer.appendChild(footerMessage);
