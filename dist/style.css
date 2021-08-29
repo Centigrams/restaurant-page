@@ -143,3 +143,33 @@ excluding nav bar and footer.
   width: 30rem;
   height: 30rem;
 }
+
+#render-menu-div {
+  min-height: var(--main-content-div-size); 
+  background: url('');
+  padding: 1rem calc(50% - 20rem);
+}
+
+.item {
+border-bottom: 0.1rem dotted #c5c5c5;
+break-inside: avoid;
+display: flex;
+justify-content: space-between;
+}
+
+span {
+  font-family: "Teko", sans-serif;
+  margin-bottom: -0.25rem;
+  padding: 0.25rem;
+  color: var(--offwhite);
+}
+.list-title {
+  font-family: "Teko", sans-serif;
+  font-size: 1.875rem;
+  color: var(--border-color-red);
+  margin-bottom: 2rem;
+}
+.list {
+  margin-bottom: 2rem;
+}
+
