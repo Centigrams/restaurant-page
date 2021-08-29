@@ -1,4 +1,4 @@
-# restaurant-page
+# Restaurant Page
 
 A sample website for a Japanese restaurant.
 
